@@ -15,30 +15,28 @@
 <body class="bg-gray-100 text-gray-800 flex flex-col min-h-screen">
 
     <!-- Navigation Bar -->
-    <nav class="bg-blue-600 p-4">
-        <div class="container mx-auto flex justify-between items-center">
-            <a href="#" class="text-white text-2xl font-bold">Shubham Tamrakar</a>
-            <a href="#projects">
-                <div class="flex space-x-4 ">
-                    <img src="https://icons.veryicon.com/png/o/internet--web/multi-color-fill-business-enterprise-ppt-icon/development-2.png" 
-                    alt="Developer Illustration" 
-                    class="w-20 h-20 rounded-full object-cover shadow-lg bg-cyan-400 p-3 pointer">
-                             </div>
-        </a> 
+    <nav class="bg-blue-600 p-4 w-full">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <!-- Brand Name -->
+            <a href="#" class="text-white text-2xl font-bold mb-2 md:mb-0">Shubham Tamrakar</a>
             
-            <!-- <ul class="flex space-x-4">
-                <li><a href="#" class="text-white hover:underline">Email</a></li>
-                <li><a href="#" class="text-white hover:underline">Skills</a></li>
-                <li><a href="#" class="text-white hover:underline">Project</a></li>
-                <li><a href="#" class="text-white hover:underline">Contact</a></li>
-            </ul> -->
+            <!-- Image with Link -->
+            <a href="#projects">
+                <div class="flex justify-center md:justify-end">
+                    <img src="https://icons.veryicon.com/png/o/internet--web/multi-color-fill-business-enterprise-ppt-icon/development-2.png"
+                        alt="Developer Illustration"
+                        class="w-16 h-16 md:w-20 md:h-20 rounded-full object-cover shadow-lg bg-cyan-400 p-2 md:p-3 cursor-pointer">
+                </div>
+            </a>
         </div>
     </nav>
+    
 
     <!-- Hero Section -->
-    <header class="bg-blue-500 text-white text-center py-20">
-        <div class="container mx-auto flex px-6">
-            <div class="bg-white rounded-lg p-6 max-w-sm w-full ">
+    <header class="bg-blue-500 text-white text-center w-full py-10 md:py-20">
+        <div class="container mx-auto flex flex-col md:flex-row px-6 md:px-0">
+            <!-- Contact Information Section -->
+            <div class="bg-white rounded-lg p-6 max-w-sm w-full mb-6 md:mb-0 md:w-1/2 md:mr-6">
                 <h2 class="text-xl font-semibold text-gray-800 mb-4">Contact Information</h2>
                 <div class="space-y-4">
                     <div class="flex items-center text-gray-600">
@@ -60,25 +58,30 @@
                     </div>
                 </div>
             </div>
-            <div class="p-6">
-                <h1 class="text-4xl font-bold">I'am Shubham</h1>
-                <p class="mt-4 text-lg">I have 2.5 years of experience as a Full Stack Developer, specializing in
-                    Angular 10+, .NET,
+            
+            <!-- Personal Information Section -->
+            <div class="p-6 md:w-1/2">
+                <h1 class="text-3xl md:text-4xl font-bold">I am Shubham</h1>
+                <p class="mt-4 text-base md:text-lg">
+                    I have 2.5 years of experience as a Full Stack Developer, specializing in Angular 10+, .NET,
                     MySQL, and HTML. I'm passionate about new technology and eager to use my skills and
                     innovative ideas to drive growth. Known for my collaboration and problem-solving abilities,
                     I've led teams to deliver projects on time, adapting to challenges and demonstrating strong
-                    leadership.</p>
+                    leadership.
+                </p>
             </div>
         </div>
     </header>
+    
 
     <!-- Main Content -->
     <main class="container mx-auto p-6 flex-grow">
-        <section class="flex gap-8 p-6">
-            <div class="bg-white p-6 rounded-lg hover:shadow-lg">
+        <section class="flex flex-col md:flex-row gap-8 p-6">
+            <!-- Skills Section -->
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg flex-grow">
                 <i class="fas fa-cogs fa-3x text-blue-500 mb-4"></i>
                 <h2 class="text-xl font-semibold mb-4">Skills</h2>
-                <div class="space-y-4">
+                <div class="space-y-6">
                     <!-- Frontend Technologies -->
                     <div>
                         <h3 class="text-lg font-semibold mb-2">Frontend Technologies</h3>
@@ -155,119 +158,121 @@
                     </div>
                 </div>
             </div>
-
-            <div class="bg-white p-6 rounded-lg flax-grow hover:shadow-lg">
+        
+            <!-- Work Experience Section -->
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg flex-grow">
                 <i class="fas fa-briefcase fa-3x text-blue-500 mb-4"></i>
                 <h2 class="text-xl font-semibold mb-2">Work Experience</h2>
-                <div class="max-w-4xl mx-auto space-y-6 p-6">
-
+                <div class="space-y-6">
                     <!-- Web Developer Intern Card -->
-                    <div class="bg-white rounded-lg shadow-lg p-6">
+                    <div class="bg-white rounded-lg shadow-md p-6">
                         <h3 class="text-xl font-semibold mb-2">Web Developer Intern</h3>
-                        <p class="text-gray-600 mb-4">Rectitude Consulting Services, Jabalpur, MP | February 2022 -
-                            March 2022</p>
+                        <p class="text-gray-600 mb-4">Rectitude Consulting Services, Jabalpur, MP | February 2022 - March 2022</p>
                         <ul class="list-disc list-inside space-y-2">
                             <li>Developed and maintained web applications using Angular 10+ and .NET Core.</li>
-                            <li>Designed and implemented user authentication features, including login and signup
-                                functionalities using Angular 10+.</li>
-                            <li>Utilized Angular Material and Bootstrap to create responsive and user-friendly web
-                                pages.</li>
+                            <li>Designed and implemented user authentication features, including login and signup functionalities using Angular 10+.</li>
+                            <li>Utilized Angular Material and Bootstrap to create responsive and user-friendly web pages.</li>
                             <li>Developed RESTful APIs to perform all CRUD operations using .NET Core.</li>
-                            <li>Employed Postman and Swagger for testing and validating Web APIs to ensure quality and
-                                functionality.</li>
+                            <li>Employed Postman and Swagger for testing and validating Web APIs to ensure quality and functionality.</li>
                         </ul>
                     </div>
-
+        
                     <!-- Full Stack Developer Card -->
-                    <div class="bg-white rounded-lg shadow-lg p-6">
+                    <div class="bg-white rounded-lg shadow-md p-6">
                         <h3 class="text-xl font-semibold mb-2">Full Stack Developer</h3>
-                        <p class="text-gray-600 mb-4">Rectitude Consulting Services, Jabalpur, MP | March 2022 - Present
-                        </p>
+                        <p class="text-gray-600 mb-4">Rectitude Consulting Services, Jabalpur, MP | March 2022 - Present</p>
                         <ul class="list-disc list-inside space-y-2">
                             <li>Acquired proficiency in Angular, .NET, MySQL, Laravel, HTML, CSS, and JavaScript.</li>
                             <li>Consistently delivered projects on time, ensuring high-quality standards.</li>
-                            <li>Developed flexible and user-interactive web pages using Angular, HTML, CSS, and
-                                Bootstrap.</li>
-                            <li>Gained solid experience in developing Single Page Applications (SPAs) using the Angular
-                                framework.</li>
-                            <li>Performed CRUD operations on MySQL databases and managed data transmission using RESTful
-                                web services.</li>
-                            <li>Created and maintained web APIs using ASP.NET Core Web API to handle backend services
-                                and data operations.</li>
-                            <li>Designed Figma prototypes for each project module and implemented them following
-                                approval from the Business Development Executive (BDE).</li>
+                            <li>Developed flexible and user-interactive web pages using Angular, HTML, CSS, and Bootstrap.</li>
+                            <li>Gained solid experience in developing Single Page Applications (SPAs) using the Angular framework.</li>
+                            <li>Performed CRUD operations on MySQL databases and managed data transmission using RESTful web services.</li>
+                            <li>Created and maintained web APIs using ASP.NET Core Web API to handle backend services and data operations.</li>
+                            <li>Designed Figma prototypes for each project module and implemented them following approval from the Business Development Executive (BDE).</li>
                             <li>Managed live CRM facilities on the Go High Level platform.</li>
                         </ul>
                     </div>
-
                 </div>
             </div>
         </section>
+        
         <section class="container p-6 bg-white" id="projects">
-            <i class="fas fa-project-diagram fa-3x text-blue-500 mr-3 mb-2"></i>
-            <h2 class="text-xl font-semibold mb-4">Projects</h2>
-            <div class="grid grid-cols-3 gap-6">
-                <div class="bg-white p-6 overflow-hidden rounded-lg hover:shadow-lg">
-                    <h2 class="text-xl font-semibold text-gray-800 mb-2">Halliburton SK Quote</h2>
+            <div class="flex items-center mb-4">
+                <i class="fas fa-project-diagram fa-3x text-blue-500 mr-3"></i>
+                <h2 class="text-xl font-semibold">Projects</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Project 1 -->
+                <div class="bg-white p-6 overflow-hidden rounded-lg shadow-md hover:shadow-lg">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Halliburton SK Quote</h3>
                     <p class="text-gray-600 mb-4">June 2022 - August 2022, Jabalpur</p>
-                    <ul class="list-disc list-inside text-gray-700">
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
                         <li>Quote generation software where users add required materials and inventory.</li>
-                        <li>Worked as a Full Stack Developer using Angular 10+, .NET with MVC pattern, and Oracle DB.
-                        </li>
+                        <li>Worked as a Full Stack Developer using Angular 10+, .NET with MVC pattern, and Oracle DB.</li>
                         <li>Worked in Agile model with 2-week sprints to deliver modifications.</li>
                         <li>Successfully wrote 10+ API test cases.</li>
                     </ul>
                 </div>
-
-            <div class="bg-white p-6 overflow-hidden rounded-lg hover:shadow-lg">
-                <h2 class="text-xl font-semibold text-gray-800 mb-2">Zest Cart Food Delivery Application</h2>
-                <p class="text-gray-600 mb-4">June 2023 - July 2023, Jabalpur</p>
-                <ul class="list-disc list-inside text-gray-700">
-                    <li>Application managing food delivery and rider geolocation.</li>
-                    <li>Worked as a Backend Developer using .NET Web API with CQRS pattern and MySQL DB.</li>
-                </ul>
-            </div>
-
-            <div class="bg-white p-6 overflow-hidden rounded-lg hover:shadow-lg">
-                <h2 class="text-xl font-semibold text-gray-800 mb-2">IERS-CRM</h2>
-                <p class="text-gray-600 mb-4">February 2024 - April 2024, Jabalpur</p>
-                <ul class="list-disc list-inside text-gray-700">
-                    <li>Developed CRM business tools.</li>
-                    <li>Worked as a Backend Developer using .NET Web API and Swagger UI.</li>
-                </ul>
-            </div>
-            <div class="bg-white p-6 overflow-hidden rounded-lg hover:shadow-lg">
-                <h2 class="text-xl font-semibold text-gray-800 mb-2">Greater Heights Holistic Psychiatry</h2>
+        
+                <!-- Project 2 -->
+                <div class="bg-white p-6 overflow-hidden rounded-lg shadow-md hover:shadow-lg">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Zest Cart Food Delivery Application</h3>
+                    <p class="text-gray-600 mb-4">June 2023 - July 2023, Jabalpur</p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Application managing food delivery and rider geolocation.</li>
+                        <li>Worked as a Backend Developer using .NET Web API with CQRS pattern and MySQL DB.</li>
+                    </ul>
+                </div>
+        
+                <!-- Project 3 -->
+                <div class="bg-white p-6 overflow-hidden rounded-lg shadow-md hover:shadow-lg">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">IERS-CRM</h3>
+                    <p class="text-gray-600 mb-4">February 2024 - April 2024, Jabalpur</p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Developed CRM business tools.</li>
+                        <li>Worked as a Backend Developer using .NET Web API and Swagger UI.</li>
+                    </ul>
+                </div>
+        
+                <!-- Project 4 -->
+                <div class="bg-white p-6 overflow-hidden rounded-lg shadow-md hover:shadow-lg">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Greater Heights Holistic Psychiatry</h3>
                     <p class="text-gray-600 mb-4">May 2024 – July 2024</p>
-                    <ul class="list-disc list-inside text-gray-700">
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
                         <li>Managed customer data and created attractive survey forms integrated with PDF contact generation API.</li>
                         <li>Worked as Technical Support and Integrated API Developer, managing all requirements.</li>
                     </ul>
-            </div>
-            <div class="bg-white p-6 overflow-hidden rounded-lg hover:shadow-lg">
-                <h2 class="text-xl font-semibold text-gray-800 mb-2">Halliburton Ticket Manager</h2>
-                <p class="text-gray-600 mb-4">April 2024 - Ongoing, Jabalpur</p>
-                <ul class="list-disc list-inside text-gray-700">
-                    <li>Ticket generation page for customer orders.</li>
-                    <li>Worked as Production Support.</li>
-                </ul>
-            </div>
-            <div class="bg-white p-6 overflow-hidden rounded-lg hover:shadow-lg">
-                <h2 class="text-xl font-semibold text-gray-800 mb-2">RCS-NWS</h2>
+                </div>
+        
+                <!-- Project 5 -->
+                <div class="bg-white p-6 overflow-hidden rounded-lg shadow-md hover:shadow-lg">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Halliburton Ticket Manager</h3>
+                    <p class="text-gray-600 mb-4">April 2024 - Ongoing, Jabalpur</p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Ticket generation page for customer orders.</li>
+                        <li>Worked as Production Support.</li>
+                    </ul>
+                </div>
+        
+                <!-- Project 6 -->
+                <div class="bg-white p-6 overflow-hidden rounded-lg shadow-md hover:shadow-lg">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">RCS-NWS</h3>
                     <p class="text-gray-600 mb-4">July 2024 - Ongoing, Jabalpur</p>
-                    <ul class="list-disc list-inside text-gray-700">
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
                         <li>Working as a Web Developer in this project to create required UI.</li>
                         <li>Using No Standalone Angular project with NX Workspace.</li>
                     </ul>
+                </div>
             </div>
         </section>
+        
 
 
     </main>
 
     <!-- Footer -->
     <footer class="bg-gray-800 text-white text-center bottom-0 py-4">
-        <p>&copy; 2024 MySite. All rights reserved.</p>
+        <p>&copy; 2024 shubham's CV. All rights reserved.</p>
         <div class="mt-2">
             <a href="#" class="text-white mx-2 hover:text-gray-400"><i class="fab fa-facebook-f"></i></a>
             <a href="#" class="text-white mx-2 hover:text-gray-400"><i class="fab fa-twitter"></i></a>
